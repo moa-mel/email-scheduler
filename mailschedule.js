@@ -20,9 +20,9 @@ app.use(BodyParser.urlencoded({ extended: true }));
     console.log("Running Cron Job");
     let mailOptions = {
       from: "olaitanmaryakano@gmail.com",
-      to: "olalekantemitayo7@gmail.com",
-      subject: `Unusual mail ;)`,
-      text: 'Tayo, shana girl'
+      to: "olalekantemitayo7@gmail.com, emmanuelayolee@yahoo.com,ikeadeoyin@gmail.com",
+      subject: `node project`,
+      text: 'message sent sucessful'
     };
     transporter.sendMail(mailOptions, function(error, info) {
       if (error) {
